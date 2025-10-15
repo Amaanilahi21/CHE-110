@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[8] = {1, 4, 6, 8, 10, 14, 17, 20};  // Increasing order
+    int n = 8;
+
+    // Reverse the array to make it decreasing order
+    for(int i = 0; i < n / 2; i++) {
+        int temp = arr[i];
+        arr[i] = arr[n - 1 - i];
+        arr[n - 1 - i] = temp;
+    }
+
+    int target = 8;
+    int l = 0, r = n - 1;
+
+    while (l <= r) {
+        int m = (l + r) / 2;
+
+        if (arr[m] == target) {
+            cout << "Element found at index: " << m;
+            break;
+        }
+        else if (arr[m] > target) {
