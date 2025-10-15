@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+class Animals{
+    public:
+    string name;
+    string type;
+void setdata(string n, string t){
+    name = n;
+    type = t;
+}
+void display(){
+    cout<<"Name:"<<name<<endl;
+    cout<<"Type:"<<type<<endl;
+}
+};
+int main() {
+    Animals cat, dog, horse;
+    cat.setdata("cat","animal");
+    dog.setdata("dog","animal");
+    horse.setdata("horse","animal");
+    
+    cat.display();
+    dog.display();
+    horse.display();
+}
+
