@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+ enum color{
+     white,yellow,green,orange
+ };
+ int main(){
+     color c;
+     c=yellow;
+     if (c == orange){
+         cout<<"color is orange";
+     }
+     else if(c==yellow){
+         cout<<"color is yellow";
+     }
+     else if (c == green ){
+         cout<<"color is green";
+     }
+ }
+
+
