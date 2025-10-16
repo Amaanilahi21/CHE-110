@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+    union student{
+        public:
+        string name;
+        int age;
+    };
+    int main(){
+    student s1;
+    s1.name="Amaan ";
+    s1.age=21;
+   cout << s1.name<<" " <<s1.age;
+
+    return 0;
+}
